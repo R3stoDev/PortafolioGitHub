@@ -39,7 +39,7 @@ async function loadProjects() {
   
   try {
     // Usar fetch directamente ya que loadJson no está disponible
-    const response = await fetch(`/i18n/projects.json`);
+    const response = await fetch(`/PortafolioGitHub/i18n/projects.json`);
     if (!response.ok) throw new Error('No se pudo cargar projects.json');
     const data = await response.json();
     
