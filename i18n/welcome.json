@@ -1,0 +1,14 @@
+{
+  "es": {
+    "welcome": {
+      "title": "Bienvenido a mi Portafolio de desarrollador v2.0",
+      "subTitle": "Escribe 'ayuda' para ver los comandos disponibles o Escribe un comando o haz clic en los botones de la izquierda "
+    }
+  },
+  "en": {
+    "welcome": {
+      "title": "Welcome to Developer Portfolio v2.0",
+      "subTitle": "Type 'help' for available commands or Type a command or click the buttons on the left "
+    }
+  }
+}

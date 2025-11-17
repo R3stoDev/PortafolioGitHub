@@ -1,0 +1,36 @@
+{
+  "es": {
+    "helpTitle": "COMANDOS DISPONIBLES:",
+    "list": {
+      "pwd": "Mostrar directorio actual",
+      "whoami": "Quién soy",
+      "ls": "Listar archivos",
+      "ls_la": "Listar archivos (detallado)",
+      "cd": "Cambiar directorio",
+      "cd_back": "Ir al directorio anterior",
+      "cat": "Ver contenido del archivo",
+      "skills_all": "Mostrar habilidades",
+      "contact": "Información de contacto",
+      "wget": "Descargar CV",
+      "clear": "Limpiar terminal",
+      "help": "Mostrar esta ayuda"
+    }
+  },
+  "en": {
+    "helpTitle": "AVAILABLE COMMANDS:",
+    "list": {
+      "pwd": "Show current directory",
+      "whoami": "Who am I",
+      "ls": "List files",
+      "ls_la": "List files (detailed)",
+      "cd": "Change directory",
+      "cd_back": "Go to previous directory",
+      "cat": "View file contents",
+      "skills_all": "Show skills",
+      "contact": "Contact information",
+      "wget": "Download CV",
+      "clear": "Clear terminal",
+      "help": "Show this help"
+    }
+  }
+}

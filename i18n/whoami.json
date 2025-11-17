@@ -1,0 +1,16 @@
+{
+  "es": {
+    "whoami": {
+      "line1": "Junior Developer",
+      "line2": "Especializado en Frontend | Angular • Kotlin • Compose",
+      "line3": "Apasionado por código limpio e interfaces modernas"
+    }
+  },
+  "en": {
+    "whoami": {
+      "line1": "Junior Developer",
+      "line2": "Specialized in Frontend | Angular • Kotlin • Compose",
+      "line3": "Passionate about clean code and modern interfaces"
+    }
+  }
+}

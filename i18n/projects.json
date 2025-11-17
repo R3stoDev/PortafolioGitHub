@@ -1,0 +1,133 @@
+{
+    "es": {
+        "vise": {
+            "title": "Aplicación para registrar y caracterizar predios",
+            "description": "Aplicación móvil para el registro y caracterización detallada de predios, facilitando la gestión y organización de la información.",
+            "images": [
+                "/images/vise1.jpeg",
+                "/images/vise2.jpeg",
+                "/images/lisa3.png"
+            ],
+            "technologies": [
+                "Kotlin",
+                "Jetpack Compose",
+                "Material Design",
+                "Room DB"
+            ],
+            "link": "https://github.com/"
+        },
+        "juego": {
+            "title": "Juego multijugador conectado a hardware de un tablero físico",
+            "description": "Juego multijugador que se conecta a un tablero físico mediante hardware, brindando una experiencia de juego más inmersiva.",
+            "images": [
+                "/images/juego1.jpeg",
+                "/images/juego2.jpeg",
+                "/images/juego3.jpeg"
+            ],
+            "technologies": [
+                "Kotlin",
+                "Jetpack Compose",
+                "Material Design",
+                "Room DB",
+                "Django"
+            ],
+            "link": "https://github.com/"
+        },
+        "lisa": {
+            "title": "Web de asistencia SENA",
+            "description": "Web de registro de asistencia, seguimiento de rutas, horarios, justificaciones y gestión de ambientes SENA",
+            "images": [
+                "/images/lisa1.png",
+                "/images/lisa2.png",
+                "/images/lisa3.png"
+            ],
+            "technologies": [
+                "Angular",
+                "TypeScript",
+                "Laravel",
+                "MySQL"
+            ],
+            "link": "https://github.com/"
+        },
+        "formSena": {
+            "title": "Web de formulario de satisfacción del SENA",
+            "description": "Plataforma web para la recopilación de opiniones de los usuarios mediante un formulario de satisfacción, ayudando a mejorar los servicios del SENA",
+            "images": [
+                "/images/form1.png",
+                "/images/form2.png",
+                "/images/form3.png"
+            ],
+            "technologies": [
+                "Laravel",
+                "MySQL"
+            ],
+            "link": "https://github.com/"
+        }
+    },
+    "en": {
+        "vise": {
+            "title": "App for Registering and Characterizing Properties",
+            "description": "Mobile app for registering and detailing properties, streamlining the management and organization of information.",
+            "images": [
+                "/images/vise1.jpeg",
+                "/images/vise2.jpeg",
+                "/images/vise3.jpeg"
+            ],
+            "technologies": [
+                "Kotlin",
+                "Jetpack Compose",
+                "Material Design",
+                "Room DB",
+                "Django"
+            ],
+            "link": "https://github.com/"
+        },
+        "juego": {
+            "title": "Multiplayer Game Connected to Physical Board Hardware",
+            "description": "Multiplayer game that connects to a physical board via hardware, providing a more immersive gaming experience.",
+            "images": [
+                "/images/juego1.jpeg",
+                "/images/juego2.jpeg",
+                "/images/juego3.jpeg"
+            ],
+            "technologies": [
+                "Kotlin",
+                "Jetpack Compose",
+                "Material Design",
+                "Room DB",
+                "MySQL"
+            ],
+            "link": "https://github.com/"
+        },
+        "lisa": {
+            "title": "Assistance Webs SENA",
+            "description": "Attendance Registration Web, Route Tracking, Schedules, Justifications, and Environment Management SENA.",
+            "images": [
+                "/images/lisa1.png",
+                "/images/lisa2.png",
+                "/images/lisa3.png"
+            ],
+            "technologies": [
+                "Angular",
+                "TypeScript",
+                "Laravel",
+                "MySQL"
+            ],
+            "link": "https://github.com/"
+        },
+        "formSena": {
+            "title": "SENA Satisfaction Survey Web Form",
+            "description": "Web platform for collecting user feedback through a satisfaction survey form, helping to improve SENA services.",
+            "images": [
+                "/images/form1.png",
+                "/images/form2.png",
+                "/images/form3.png"
+            ],
+            "technologies": [
+                "Laravel",
+                "MySQL"
+            ],
+            "link": "https://github.com/"
+        }
+    }
+}

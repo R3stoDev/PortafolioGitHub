@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$ whoami | Developer Portfolio</title>
+  <link rel="stylesheet" href="/v1/style.css" />
+  <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inconsolata:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="terminal-container">
+    <!-- TERMINAL WINDOW -->
+    <div class="terminal-window">
+
+      <!-- <button onclick="debugProjects()"
+        style="margin-left: 10px; padding: 5px; background: #00ff00; color: black; border: none; border-radius: 3px;">
+        Debug Proyectos
+      </button> -->
+      <!-- TERMINAL HEADER -->
+      <div class="terminal-header-bar">
+        <div class="header-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="header-title">developer@portfolio:~</div>
+
+
+        <div class="theme-toggle" id="themeToggle" data-theme="light">
+          <span class="theme-option" data-theme="light">☀️</span>
+          <span class="theme-option" data-theme="dark">🌙</span>
+          <div class="theme-slider"></div>
+        </div>
+        <button id="toggleVersionBtn" class="version-toggle" onclick="toggleVersion()">
+          <span data-i18n="version.toggleVersionv2"></span>
+
+        </button>
+
+
+        <div class="lang-switch">
+          <span class="lang-option" data-lang="es">ES</span>
+          <span class="lang-option" data-lang="en">EN</span>
+          <div class="lang-slider"></div>
+        </div>
+      </div>
+
+      <!-- TERMINAL BODY -->
+      <div class="terminal-body">
+        <!-- HERO SECTION -->
+        <section class="terminal-section hero-section">
+          <div class="command-line">
+            <span class="prompt">~/portfolio $</span>
+            <span class="user-command" id="heroCommand">whoami</span>
+            <span class="cursor">▋</span>
+          </div>
+          <div class="command-output">
+            <div class="output-line">
+              <span class="output-title">» Junior Frontend Developer</span>
+            </div>
+            <div class="output-line">
+              <span class="output-text">Angular • Kotlin • Compose • Laravel • JavaScript • CSS • SQL
+                • Figma</span>
+            </div>
+          </div>
+
+          <div class="command-line" style="margin-top: 30px">
+            <span class="prompt">~/portfolio $</span>
+            <span class="user-command" id="aboutCommand">cat bio.txt</span>
+            <span class="cursor">▋</span>
+          </div>
+          <div class="command-output bio-output">
+            <div class="output-line">
+              <span data-i18n="bio.line1"></span>
+            </div>
+            <div class="output-line">
+              <span data-i18n="bio.line2">Experiencia en Angular, Kotlin/Compose, Laravel y diseño en Figma.</span>
+            </div>
+            <div class="output-line">
+              <span data-i18n="bio.line3">Especializado en transformar diseños en código limpio, performante y
+                accesible.</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="cta-container">
+        <a href="#projects" class="terminal-btn btn-primary">
+          <span class="btn-bracket">[</span>
+          <span class="btn-text">Ver Proyectos</span>
+          <span class="btn-bracket">]</span>
+        </a>
+        <a href="#contact" class="terminal-btn btn-secondary">
+          <span class="btn-bracket">[</span>
+          <span class="btn-text">Contacto</span>
+          <span class="btn-bracket">]</span>
+        </a>
+      </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="terminal-section projects-section" id="projects">
+        <div class="command-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="user-command">ls -la projects/</span>
+          <span class="cursor">▋</span>
+        </div>
+
+        <div class="projects-list" id="projects-container">
+
+
+
+        </div>
+
+      </section>
+
+      <!-- TECHNOLOGIES SECTION -->
+      <section class="terminal-section tech-section" id="tech">
+        <div class="command-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="user-command">skills --all</span>
+          <span class="cursor">▋</span>
+        </div>
+        <div class="tech-tree">
+          <div class="tech-item">
+            <span class="tech-icon">
+              <img src="/images/angular.svg" alt="Icono" width="24" height="24">
+
+            </span>
+            <div class="tech-info">
+              <div class="tech-name">Frontend</div>
+              <div class="tech-list">
+                Angular • JavaScript • CSS3
+              </div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">
+              <img src="/images/kotlin.svg" alt="Icono" width="24" height="24">
+            </span>
+            <div class="tech-info">
+              <div class="tech-name">Mobile</div>
+              <div class="tech-list">Kotlin • Jetpack Compose</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">
+              <img src="/images/lavavel.svg" alt="Icono" width="24" height="24">
+
+            </span>
+            <div class="tech-info">
+              <div class="tech-name">Backend</div>
+              <div class="tech-list">Laravel • MySQL</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">
+              <img src="/images/figma.svg" alt="Icono" width="24" height="24">
+
+            </span>
+            <div class="tech-info">
+              <div class="tech-name">Design</div>
+              <div class="tech-list">Figma • UX/UI • Design Systems</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL SECTION -->
+      <section class="terminal-section social-section" id="social">
+        <div class="command-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="user-command">cat contact.txt</span>
+          <span class="cursor">▋</span>
+        </div>
+        <div class="command-output social-links">
+          <a id="githubLink" target="_blank" class="social-link">
+            <span class="link-prefix">github.com/</span>
+            <span class="link-text">username</span>
+          </a>
+          <a id="linkedinLink" target="_blank" class="social-link">
+            <span class="link-prefix">linkedin.com/in/</span>
+            <span class="link-text">profile</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link">
+            <span class="link-prefix">twitter.com/</span>
+            <span class="link-text">account</span>
+          </a>
+          <a id="emailLink" class="social-link">
+            <span class="link-prefix">email:</span>
+            <span class="link-text">admin@gmail.com</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CV SECTION -->
+      <section class="terminal-section cv-section" id="contact">
+        <div class="command-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="user-command">wget cv.pdf</span>
+          <span class="cursor">▋</span>
+        </div>
+        <div class="command-output cv-options">
+          <a href="ruta/a/tu/cv.pdf" download class="terminal-btn btn-primary">
+            <span class="btn-bracket">[</span>
+            <span class="btn-text">⬇ Descargar CV</span>
+            <span class="btn-bracket">]</span>
+          </a>
+          <button class="terminal-btn btn-secondary" onclick="viewCVOnline()">
+            <span class="btn-bracket">[</span>
+            <span class="btn-text">👁 Ver en Línea</span>
+            <span class="btn-bracket">]</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <div class="terminal-footer">
+        <div class="command-line">
+          <span class="prompt">~/portfolio $</span>
+          <span class="user-command">echo "Designed & Built with ❤️"</span>
+        </div>
+        <div class="footer-output">© 2025 • Hecho por mí</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="/script.js"></script>
+
+  <script src="/v1/script.js"></script>
+
+
+</body>
+
+</html>

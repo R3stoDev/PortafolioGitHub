@@ -1,0 +1,22 @@
+{
+  "es": {
+    "wget": {
+      "line1": "--2025-01-14 10:30:45-- https://portfolio.com/cv.pdf",
+      "line2": "Resolviendo portfolio.com... 192.168.1.1",
+      "line3": "Conectando a portfolio.com[192.168.1.1]... conectado",
+      "line4": "Solicitud HTTP enviada, esperando respuesta... 200 OK",
+      "line5": "Descargando 'cv.pdf' [████████████████████] 100% 2.4M",
+      "line6": "✓ cv.pdf guardado exitosamente"
+    }
+  },
+  "en": {
+    "wget": {
+      "line1": "--2025-01-14 10:30:45-- https://portfolio.com/cv.pdf",
+      "line2": "Resolving portfolio.com... 192.168.1.1",
+      "line3": "Connecting to portfolio.com[192.168.1.1]... connected",
+      "line4": "HTTP request sent, waiting for response... 200 OK",
+      "line5": "Downloading 'cv.pdf' [████████████████████] 100% 2.4M",
+      "line6": "✓ cv.pdf successfully saved"
+    }
+  }
+}

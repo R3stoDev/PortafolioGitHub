@@ -1,0 +1,36 @@
+{
+  "es": {
+    "errors": {
+      "commandNotFound": "Comando no encontrado: '{cmd}' - Escribe 'help' para ver comandos disponibles",
+      "catProjects": {
+        "noDir": "cat: /projects: No existe el directorio",
+                "noProject": "cat: {project}: No existe el proyecto",
+        "separator": "═══════════════════════════════════════════",
+        "seeGallery": "→ cat projects/{name} (para ver galería)"
+      },
+      "ls": {
+        "noDir": "ls: No existe el directorio"
+      },
+      "cd": {
+        "noDir": "cd: No existe el directorio: {path}"
+      }
+    }
+  },
+  "en": {
+    "errors": {
+      "commandNotFound": "Command not found: '{cmd}' - Type 'help' to see available commands",
+      "catProjects": {
+        "noDir": "cat: /projects: No such directory",
+                "noProject": "cat: {project}: No such project",
+        "separator": "═══════════════════════════════════════════",
+        "seeGallery": "→ cat projects/{name} (to view gallery)"
+      },
+      "ls": {
+        "noDir": "ls: No such directory"
+      },
+      "cd": {
+        "noDir": "cd: No such directory: {path}"
+      }
+    }
+  }
+}

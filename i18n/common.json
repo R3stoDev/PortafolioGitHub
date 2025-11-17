@@ -1,0 +1,10 @@
+{
+  "es": {
+    "title": "Mi Portafolio",
+    "hello": "Hola mundo"
+  },
+  "en": {
+    "title": "My Portfolio",
+    "hello": "Hello world"
+  }
+}
