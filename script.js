@@ -8,8 +8,21 @@ if (!window.__I18N_INITIALIZED) {
   //   RUTA BASE DE ARCHIVOS I18N - CORREGIDA PARA GITHUB PAGES
   // ============================================================
   function getI18nBasePath() {
-    // Para GitHub Pages, usar ruta relativa
-    return "i18n";
+    const path = window.location.pathname;
+  
+  // Si estamos en GitHub Pages con estructura de repositorio
+    if (path.includes('/PortafolioGitHub/')) {
+      if (path.includes('/v1/') || path.includes('/v2/')) {
+        return '../i18n';  // Desde v1/ o v2/ subir a PortafolioGitHub/i18n
+      }
+      return 'i18n';  // Desde la raíz del repositorio
+    }
+  
+  // Para desarrollo local
+    if (path.includes('/v1/') || path.includes('/v2/')) {
+      return '../i18n';
+    }
+    return 'i18n';
   }
   const I18N_PATH = getI18nBasePath();
 
