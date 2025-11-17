@@ -5,10 +5,11 @@ if (!window.__I18N_INITIALIZED) {
   window.__I18N_INITIALIZED = true;
 
   // ============================================================
-  //   RUTA BASE DE ARCHIVOS I18N
+  //   RUTA BASE DE ARCHIVOS I18N - CORREGIDA PARA GITHUB PAGES
   // ============================================================
   function getI18nBasePath() {
-    return "/i18n";
+    // Para GitHub Pages, usar ruta relativa
+    return "i18n";
   }
   const I18N_PATH = getI18nBasePath();
 
@@ -17,6 +18,7 @@ if (!window.__I18N_INITIALIZED) {
   // ============================================================
   async function loadJson(lang, file) {
     try {
+      // Ruta relativa corregida
       const resp = await fetch(`${I18N_PATH}/${file}.json`);
       if (!resp.ok) return null;
       return await resp.json();
@@ -73,7 +75,6 @@ if (!window.__I18N_INITIALIZED) {
       const el = document.querySelector(`[data-i18n="${fullKey}"]`);
       if (!el) continue;
 
-      // Si requiere recuadro ASCII
       if (el.classList.contains("line-content-box")) {
         el.innerHTML = "";
         createBoxedText(value).forEach(line => {
@@ -128,22 +129,30 @@ if (!window.__I18N_INITIALIZED) {
   };
 
   // ============================================================
-  //   TOGGLE ENTRE v1 Y v2
+  //   TOGGLE ENTRE v1 Y v2 - CORREGIDO PARA GITHUB PAGES
   // ============================================================
   function toggleVersion() {
     const current = localStorage.getItem("version") || "v1";
     const next = current === "v1" ? "v2" : "v1";
     localStorage.setItem("version", next);
-    window.location.href = `/${next}/index.html`;
+    
+    // Ruta relativa corregida
+    const currentPath = window.location.pathname;
+    const basePath = currentPath.includes('/v1/') || currentPath.includes('/v2/') 
+      ? '..' 
+      : '.';
+    
+    window.location.href = `${basePath}/${next}/index.html`;
   }
   window.toggleVersion = toggleVersion;
 
   // ============================================================
-  //   LINKS (actualiza urls según idioma)
+  //   LINKS (actualiza urls según idioma) - CORREGIDO
   // ============================================================
   async function loadLinksJson() {
     try {
-      const res = await fetch("/links.json");
+      // Ruta relativa corregida
+      const res = await fetch("links.json");
       if (!res.ok) return null;
       return await res.json();
     } catch {
@@ -185,7 +194,7 @@ if (!window.__I18N_INITIALIZED) {
   window.__applyLinks = applyLinks;
 
   // ============================================================
-  //   MANEJADOR GLOBAL DE RUTAS DE IMÁGENES
+  //   MANEJADOR GLOBAL DE RUTAS DE IMÁGENES - CORREGIDO
   // ============================================================
   function getImagePath(imageName) {
     const isV2 = window.location.pathname.includes("/v2/");
@@ -195,9 +204,10 @@ if (!window.__I18N_INITIALIZED) {
       return imageName;
 
     if (imageName.includes("public/"))
-      return `/${imageName}`;
+      return imageName; // Ruta relativa
 
-    return `/${version}/images/${imageName}`;
+    // Ruta relativa corregida
+    return `${version}/images/${imageName}`;
   }
   window.getImagePath = getImagePath;
 
@@ -222,5 +232,4 @@ if (!window.__I18N_INITIALIZED) {
     document.body.classList.toggle("dark-mode", saved === "dark");
     document.body.classList.toggle("light-mode", saved === "light");
   });
-
 }
