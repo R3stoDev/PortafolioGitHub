@@ -10,18 +10,12 @@ if (!window.__I18N_INITIALIZED) {
   function getI18nBasePath() {
     const path = window.location.pathname;
   
-  // Si estamos en GitHub Pages con estructura de repositorio
-    if (path.includes('/PortafolioGitHub/')) {
-      if (path.includes('/v1/') || path.includes('/v2/')) {
-        return '../i18n';  // Desde v1/ o v2/ subir a PortafolioGitHub/i18n
-      }
-      return 'i18n';  // Desde la raíz del repositorio
-    }
-  
-  // Para desarrollo local
+  // Si la ruta contiene /v2/ o /v1/, subir un nivel para llegar a la raíz del repositorio
     if (path.includes('/v1/') || path.includes('/v2/')) {
       return '../i18n';
     }
+  
+  // Si está en la raíz del repositorio
     return 'i18n';
   }
   const I18N_PATH = getI18nBasePath();
