@@ -6,7 +6,7 @@ window.getImagePath = function(imageName) {
   if (imageName.includes('public/')) {
     return `/${imageName}`;
   }
-  return `/images/${imageName}`;
+  return `/PortafolioGitHub/images/${imageName}`;
 };
 
 // ================ THEME TOGGLE ================ 
