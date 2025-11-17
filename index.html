@@ -9,14 +9,10 @@
 </head>
 <body>
     <script>
-  const versionSeleccionada = localStorage.getItem('version');
 
-        // Si hay una versión seleccionada, redirigir a la versión correspondiente
-        if (versionSeleccionada === 'v1') {
-            window.location.href = '/PortafolioGitHub/index.html'; // Usamos la ruta absoluta
-        } else {
-            window.location.href = '/PortafolioGitHub/v2/index.html'; // Usamos la ruta absoluta
-        }
+         const versionSeleccionada = localStorage.getItem('version') || 'v1';
+        window.location.href = `/PortafolioGitHub/${versionSeleccionada}/index.html`;
+        
 </script>
 <script src="/PortafolioGitHub/script.js"></script>
 
