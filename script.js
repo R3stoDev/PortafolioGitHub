@@ -8,15 +8,7 @@ if (!window.__I18N_INITIALIZED) {
   //   RUTA BASE DE ARCHIVOS I18N - CORREGIDA PARA GITHUB PAGES
   // ============================================================
   function getI18nBasePath() {
-    const path = window.location.pathname;
-  
-  // Si la ruta contiene /v2/ o /v1/, subir un nivel para llegar a la raíz del repositorio
-    if (path.includes('/v1/') || path.includes('/v2/')) {
-      return '../i18n';
-    }
-  
-  // Si está en la raíz del repositorio
-    return 'i18n';
+    return "/PortafolioGitHub/i18n";
   }
   const I18N_PATH = getI18nBasePath();
 
@@ -25,8 +17,7 @@ if (!window.__I18N_INITIALIZED) {
   // ============================================================
   async function loadJson(lang, file) {
     try {
-      // Ruta relativa corregida
-      const resp = await fetch(`${I18N_PATH}/${file}.json`);
+      const resp = await fetch(`/PortafolioGitHub/i18n/${file}.json`);
       if (!resp.ok) return null;
       return await resp.json();
     } catch {
@@ -140,16 +131,9 @@ if (!window.__I18N_INITIALIZED) {
   // ============================================================
   function toggleVersion() {
     const current = localStorage.getItem("version") || "v1";
-    const next = current === "v1" ? "v2" : "v1";
-    localStorage.setItem("version", next);
-    
-    // Ruta relativa corregida
-    const currentPath = window.location.pathname;
-    const basePath = currentPath.includes('/v1/') || currentPath.includes('/v2/') 
-      ? '..' 
-      : '.';
-    
-    window.location.href = `${basePath}/${next}/index.html`;
+  const next = current === "v1" ? "v2" : "v1";
+  localStorage.setItem("version", next);
+  window.location.href = `/PortafolioGitHub/${next}/index.html`
   }
   window.toggleVersion = toggleVersion;
 
@@ -158,8 +142,7 @@ if (!window.__I18N_INITIALIZED) {
   // ============================================================
   async function loadLinksJson() {
     try {
-      // Ruta relativa corregida
-      const res = await fetch("links.json");
+      const res = await fetch("/PortafolioGitHub/links.json");
       if (!res.ok) return null;
       return await res.json();
     } catch {
@@ -204,17 +187,10 @@ if (!window.__I18N_INITIALIZED) {
   //   MANEJADOR GLOBAL DE RUTAS DE IMÁGENES - CORREGIDO
   // ============================================================
   function getImagePath(imageName) {
-    const isV2 = window.location.pathname.includes("/v2/");
-    const version = isV2 ? "v2" : "v1";
-
-    if (imageName.startsWith("/") || imageName.startsWith("http"))
-      return imageName;
-
-    if (imageName.includes("public/"))
-      return imageName; // Ruta relativa
-
-    // Ruta relativa corregida
-    return `${version}/images/${imageName}`;
+      if (imageName.startsWith('/') || imageName.startsWith('http')) {
+        return imageName;
+      }
+    return `/PortafolioGitHub/images/${imageName}`;
   }
   window.getImagePath = getImagePath;
 
