@@ -1,0 +1,12 @@
+{
+  "es": {
+    "bio": "Soy un desarrollador junior especializado en Frontend con experiencia en Kotlin/Compose, Angular y Laravel. Apasionado por crear interfaces modernas y código limpio.",
+    "skills": "FRONTEND: Angular, JavaScript, CSS3, HTML5\nMOBILE: Kotlin, Jetpack Compose, Material Design\nBACKEND: Laravel, MySQL, PHP\nDESIGN: Figma, UX/UI, Design Systems",
+    "contact": "GitHub: https://github.com/\nLinkedIn: https://linkedin.com/in/\nTwitter: https://twitter.com/\nEmail: admin@gmail.com"
+  },
+  "en": {
+    "bio": "I am a junior developer specialized in Frontend with experience in Kotlin/Compose, Angular, and Laravel. Passionate about creating modern interfaces and clean code.",
+    "skills": "FRONTEND: Angular, JavaScript, CSS3, HTML5\nMOBILE: Kotlin, Jetpack Compose, Material Design\nBACKEND: Laravel, MySQL, PHP\nDESIGN: Figma, UX/UI, Design Systems",
+    "contact": "GitHub: https://github.com/\nLinkedIn: https://linkedin.com/in/\nTwitter: https://twitter.com/\nEmail: admin@gmail.com"
+  }
+}

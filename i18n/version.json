@@ -1,0 +1,16 @@
+{
+  "es": {
+    "version":{
+    "toggleVersionv1": "Ir a Versión 1",
+    "toggleVersionv2": "Ir a Versión 2"
+    }
+  },
+  "en": {
+
+    "version": {
+    "toggleVersionv1": "Go to Version 1",
+    "toggleVersionv2": "Go to Version 2"
+    }
+
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$ portfolio --dev | Developer Terminal</title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="/v2/styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="terminal-wrapper">
+    <aside class="command-sidebar">
+      <div class="sidebar-header">
+        <div data-i18n="helpTitle" class="sidebar-title"></div>
+
+        <div class="sidebar-divider"></div>
+      </div>
+
+      <div class="commands-list">
+        <button class="cmd-btn" onclick="executeCommand('whoami')">
+          whoami
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('pwd')">pwd</button>
+        <button class="cmd-btn" onclick="executeCommand('ls -la')">
+          ls -la
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('cd projects')">
+          cd projects
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('ls')">ls</button>
+        <button class="cmd-btn" onclick="executeCommand('cat bio.txt')">
+          cat bio.txt
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('skills --all')">
+          skills --all
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('contact')">
+          contact
+        </button>
+        <button class="cmd-btn" onclick="executeCommand('help')">help</button>
+        <button class="cmd-btn" onclick="executeCommand('clear')">
+          clear
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+
+
+        <div class="footer-label">Quick Links</div>
+        <a id="githubLink" target="_blank" class="quick-link">GitHub</a>
+        <a id="linkedinLink" target="_blank" class="quick-link">LinkedIn</a>
+        <a id="emailLink" class="quick-link">Email</a>
+      </div>
+    </aside>
+
+    <main class="terminal-container">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="header-buttons">
+            <span class="btn btn-red"></span>
+            <span class="btn btn-yellow"></span>
+            <span class="btn btn-green"></span>
+          </div>
+          <div class="header-text">developer@portfolio ~ %</div>
+
+          <div class="theme-toggle" id="themeToggle" data-theme="light">
+            <span class="theme-option" data-theme="light">☀️</span>
+            <span class="theme-option" data-theme="dark">🌙</span>
+            <div class="theme-slider"></div>
+          </div>
+
+
+          <button id="toggleVersionBtn" class="version-toggle" onclick="toggleVersion()">
+            <span data-i18n="version.toggleVersionv1"></span>
+          </button>
+
+          <div class="lang-switch">
+            <span class="lang-option" data-lang="es">ES</span>
+            <span class="lang-option" data-lang="en">EN</span>
+            <div class="lang-slider"></div>
+          </div>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-output">
+            <div class="output-line welcome-line">
+              <span class="line-number">1</span>
+              <span data-i18n="welcome.title" class="line-content-box"></span>
+            </div>
+
+            <div class="output-line welcome-line">
+              <span class="line-number">2</span>
+              <span data-i18n="welcome.subTitle" class="line-content"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-input-area">
+          <div class="input-line" id="inputLine">
+            <span class="prompt" id="promptText">developer@portfolio ~ $</span>
+            <input type="text" id="commandInput" class="command-input" placeholder="Enter command..."
+              autocomplete="off" />
+            <span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/script.js"></script>
+
+  <!-- En tu index.html, agrega el nuevo archivo -->
+  <script src="/v2/commands.js"></script>
+  <script src="/v2/script.js"></script>
+</body>
+
+</html>

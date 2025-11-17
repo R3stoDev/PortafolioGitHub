@@ -1,0 +1,16 @@
+{
+  "es": {
+    "bio": {
+      "line1": "Desarrollador frontend junior con pasión por crear interfaces modernas.",
+      "line2": "Experiencia en Angular, Kotlin/Compose, Laravel y diseño en Figma.",
+      "line3": "Especializado en transformar diseños en código limpio, performante y accesible."
+    }
+  },
+  "en": {
+    "bio": {
+      "line1": "Junior frontend developer passionate about creating modern interfaces.",
+      "line2": "Experience in Angular, Kotlin/Compose, Laravel and Figma design.",
+      "line3": "Specialized in transforming designs into clean, performant and accessible code."
+    }
+  }
+}
